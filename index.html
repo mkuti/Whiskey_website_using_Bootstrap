@@ -1,55 +1,158 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css">
     <title>Whiskey Drop | Taste a new whiskey every month!</title>
 </head>
+
 <body>
-    
-    <article = "container">
-        
-        <! call out section -->
-                <section class = "callout">
-            <h1>The finest whiskeys delivered to your doorstep.</h1>
-            <p>Sign up today to start receiving the world's best whiskeys every month. The first one is free!</p>
-        </section>
-        
-        <! Quotes -->
-        <section class = "quotes">
-            <h2 class = "text-uppercase">Quotes:</h2>
-            <div class = "quote">
-                <p>"Best delivery service!"</p>
-                <p>- Jon Snow</p>
+    <!-- nav -->
+    <nav class="navbar navbar-light navbar-expand-sm bg-light">
+        <a href="/" class="navbar-brand">
+                    Whiskey Drop</a>
+        <ul class="navbar-nav mr-auto">
+            <li class="active nav-item mr-2"><a class="nav-link" href="/">Home</a></li>
+            <li class="nav-item mr-2"><a class="nav-link" href="">About</a></li>
+            <li class="nav-item mr-2 d-block d-sm-none"><a class="nav-link" href="">Sign In / Sign Up</a></li>
+        </ul>
+
+        <div class="d-none d-md-block">
+            <p class="navbar-text my-auto mr-2"><i>Great whiskey delivered to your door</i></p>
+            <a href="/login">Sign In / Sign Up</a>
+        </div>
+        <!--</div>-->
+    </nav>
+    <article="container mt-3">
+
+        <!-- call out section -->
+        <div class="row">
+            <div class="col-12">
+                <section class="callout jumbotron text-center">
+                    <h1>The finest whiskeys delivered to your doorstep.</h1>
+                    <p class="lead">Sign up today to start receiving the world's best whiskeys every month. <s class="d-none d-sm-inline">€19.99</s>
+                    <span class="d-inline d-sm-none"><br></span>
+                    <strong><mark>The first one is free!</mark></strong></p>
+                    <button class="btn btn-success btn-lg">Sign up!</button>
+                    <p class="text-muted"><small>You must be over 18 to use our services. Please drink responsibly.</small></p>
+                </section>
             </div>
-            <div class="quote">
-                <p>"I haven't been sober for the past few months"</p>
-                <p>- Matilda</p>
+        </div>
+
+        <!-- Quotes -->
+        <section class="quotes">
+            <div class="col-12 my-5">
+                <h2 class="text-uppercase">Quotes:</h2>
+            </div>
+            <div class="row">
+                <div class="col-12 col-md-6">
+                    <blockquote class="blockquote">
+                        <p>"Best delivery service!"</p>
+                        <p>- Jon Snow</p>
+                    </blockquote>
+                </div>
+                <div class="col-12 col-md-6">
+                    <blockquote class="blockquote">
+                        <p>"I haven't been sober for the past few months"</p>
+                        <p>- Matilda</p>
+                    </blockquote>
+                </div>
             </div>
         </section>
-        
-        <! Features -->
+
+        <!-- Features -->
+
         <section class="features">
-            <h2>Features:</h2>
-            <div class="feature">
-                <h3>Feature 1</h3>
-                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Eligendi, totam?</p>
+            <div class="row">
+                <div class="col-12 my-5">
+                    <h2 class="text-uppercase">Features:</h2>
+                </div>
             </div>
-            
-            <div class=feature>
-                <h3>Feature 2</h3>
-                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ipsum impedit, aspernatur alias possimus nam aliquam itaque nemo neque fugit iure.</p>
+            <div class="row">
+                <div class="col-12 col-md-6 col-lg-4">
+                    <div class="feature">
+                        <h3>Feature 1</h3>
+                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Eligendi, totam?</p>
+                        <p><a class="btn btn-sm btn-light" href="">Read more</a></p>
+                    </div>
+                </div>
+
+                <div class="col-12 col-md-6 col-lg-4">
+                    <div class=feature>
+                        <h3>Feature 2</h3>
+                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ipsum impedit, aspernatur alias possimus nam aliquam itaque nemo neque fugit iure.</p>
+                        <p><a class="btn btn-sm btn-light" href="">Read more</a></p>
+                    </div>
+                </div>
+
+                <div class="col-12 d-md-none d-lg-block col-lg-4">
+                    <div class="feature">
+                        <h3>Feature 3</h3>
+                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Optio alias deserunt ratione dicta, inventore numquam sed sapiente! Tempore molestias illum dicta, nesciunt reiciendis, quod aut culpa laboriosam animi veniam natus.</p>
+                        <p><a class="btn btn-sm btn-light" href="">Read more</a></p>
+                    </div>
+                </div>
             </div>
-            
-           <div class="feature">
-               <h3>Feature 3</h3>
-               <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Optio alias deserunt ratione dicta, inventore numquam sed sapiente! Tempore molestias illum dicta, nesciunt reiciendis, quod aut culpa laboriosam animi veniam natus.</p>
-           </div>
         </section>
-        
-    </article>
-    
+
+        </div>
+
+        <!-- Favorites -->
+
+        <section class="favorites">
+            <div class="row">
+                <div class="col-12 my-5">
+                    <h3 class="text-uppercase">Monthly Favourites - Top 5 whiskeys of the month</h3>
+                </div>
+            </div>
+            <div class="row">
+                <table class="table">
+                    <tr>
+                        <th scope="col">#</th>
+                        <th scope="col">Name</th>
+                        <th scope="col">Origin</th>
+                    </tr>
+
+                    <tr>
+                        <td scope="row">1</td>
+                        <td scope="row">Jameson</td>
+                        <td scope- "row">Ireland</td>
+                    </tr>
+
+                    <tr>
+                        <td scope="row">2</td>
+                        <td scope="row">Ardmore</td>
+                        <td scope="row">Scotland</td>
+                    </tr>
+
+                    <tr>
+                        <td scope="row">3</td>
+                        <td scope="row">Johnny Walker</td>
+                        <td scope="row">Scotland</td>
+                    </tr>
+
+                    <tr>
+                        <td scope="row">4</td>
+                        <td scope="row">Ichiro</td>
+                        <td scope="row">Japan</td>
+                    </tr>
+
+                    <tr>
+                        <td scope="row">5</td>
+                        <td scope="row">1792</td>
+                        <td scope="row">Kentucky, US</td>
+                    </tr>
+
+                </table>
+            </div>
+        </section>
+        </div>
+        </div>
+        </article>
+
 </body>
+
 </html>
