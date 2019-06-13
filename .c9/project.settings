@@ -1,6 +1,6 @@
 {
     "instance": {
-        "@automaticShutdown": "240"
+        "@automaticShutdown": "30"
     },
     "language": {
         "tern_defs": {
