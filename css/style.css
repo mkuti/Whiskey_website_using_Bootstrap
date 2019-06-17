@@ -1,0 +1,127 @@
+body {
+    font-family: 'B612 Mono', monospace;
+}
+
+/*navbar*/
+
+.navalert-container {
+    position: absolute;
+    top: 0;
+    left: 0;
+    padding-left: 0;
+    padding:right; 0;
+}
+   
+.navbar {
+    margin-bottom: 0;
+    border: 0;
+    width: 100%;
+    background-color: rgba(0, 0, 0, 0.25);
+    z-index: 1;
+}  
+   
+.navbar .navbar-toggler {
+    border: 0;
+}  
+
+.navbar-brand {
+    font-weight: bold;
+    }
+    
+.navbar .navbar-nav a {
+    font-weight: bold;
+}
+   /*containers*/
+
+.callout-container {
+    height: 100vh;
+    background: url(../Images/whiskey.jpg) no-repeat bottom right fixed;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+    
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+    }
+
+.quotes-container {}
+
+.features-container {}
+
+/*block dividers*/
+
+.block-divider {
+    width: 75px;
+    height: 5px;
+    border: 0;
+    }
+
+.block-divider--orange {
+    background-color: #c1340a;
+}
+
+.block-divider-small {
+    width: 35px;
+}
+
+ /*opaque overlay for the background image*/
+ 
+.opaque-overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 100%;
+  width: 100%;
+  background: rgba(0, 0, 0, 0.5);
+}
+
+/*jumbotron*/
+
+.jumbotron {
+    background-color: transparent;
+}
+
+.jumbotron-header {
+    color: #fff;
+    font-weight: bold;
+    margin-top: 30px;
+}
+
+.jumbotron .lead {
+    font-size: 1.25rem;
+    font-weight: 300;
+    margin: 25px 0;
+    color: #949494;
+}
+
+.jumbotron small {
+    font-size: 60%;
+    font-style: italic;
+    color: #e6e6e6;
+}
+
+/* buttons */
+
+.btn--cta {
+    font-weight:bold;
+    border-radius:23px;
+    width: 200px;
+    }
+
+.btn--red {
+    color: white;
+    border-color: #c1340a;
+    background-color: #c1340a;
+}
+
+.btn--red:hover,
+.btn--red:active,
+.btn--red:focus,
+.btn--red:active:focus {
+    border-color: #942909;
+    background-color: #962605;
+    color: white;
+}
